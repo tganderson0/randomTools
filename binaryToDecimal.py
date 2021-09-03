@@ -14,7 +14,7 @@ if (len(sys.argv) > 2):
 if (sys.argv[1] == "-help"):
     print("Usage: binaryToDecimal.py [binaryNumber]")
     exit()
-for i in range(len(sys.argv[1]) - 1, 0, -1):
+for i in range(len(sys.argv[1]) - 1, -1, -1):
     
     if not sys.argv[1][i] in "01":
         print("Error: \'" + sys.argv[1][i] + "\' \nMay only contain 0 or 1")
